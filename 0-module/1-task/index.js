@@ -4,7 +4,7 @@
  * @param {number} n
  * @returns {number}
  */
- var sum = function(m, n) {
+ function sum(m, n) {
    return m + n;
  }
 
