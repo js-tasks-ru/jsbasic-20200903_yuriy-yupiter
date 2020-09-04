@@ -6,5 +6,4 @@
  */
  function sum(m, n) {
    var x = m + n;
-   alert(x);
  }
