@@ -4,6 +4,7 @@
  * @param {number} n
  * @returns {number}
  */
-function sum(m, n) {
-  // ваш код...
-}
+ function sum(m, n) {
+   var x = m + n;
+   return x;
+ }
