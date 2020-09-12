@@ -5,5 +5,10 @@
  * @returns {string}
  */
 function truncate(str, maxlength) {
-  // ваш код...
+  if (str.length > maxlength) {
+  str = str.slice(0, 19) + "…";
+  return str;
+  } else {
+  return str;
+  }
 }
