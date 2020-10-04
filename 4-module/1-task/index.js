@@ -14,10 +14,6 @@ function makeFriendsList(friends) {
     const li = document.createElement('li');
     li.textContent = item;
 
-    if (item.children) {
-      li.appendChild(makeFriendsList(item.children));
-    }
-
     ul.appendChild(li);
   });
 
