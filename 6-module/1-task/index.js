@@ -38,6 +38,9 @@ export default class UserTable {
     this.thead = this.elem.createTHead();
     this.tbody = this.elem.createTBody();
     this.tr = this.elem.insertRow();
+    this.createHead();
+    this.createBody();
+    this.createClickButton();
   }
 
   createHead() {
@@ -84,13 +87,10 @@ export default class UserTable {
       if (event.target.tagName !== 'BUTTON') return;
       let target = event.target;
       let rowRemove = target.closest('tr');
-      rowRemove.hidden = true;
+      rowRemove.remove();
     }
     return this;
   }
 }
-
-let table = new UserTable(rows).createHead().createBody().createClickButton();
-document.body.append(table.elem);
 
 
