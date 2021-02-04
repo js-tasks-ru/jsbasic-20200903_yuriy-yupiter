@@ -44,6 +44,7 @@ export default class Carousel {
 
       this.price = document.createElement('span');
       this.price.append(`€${this.slide.price.toFixed(2)}`);
+      this.price.classList.add('carousel__price');
       this.caption.append(this.price);
 
       this.title = document.createElement('div');
