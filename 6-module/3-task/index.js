@@ -62,10 +62,7 @@ export default class Carousel {
       this.currentSlideNumber = 0;
       
     })
-    this.elem.addEventListener('product-add', (event) => {
-      alert(`Custom Клик!${event.detail}`)
-  });
-
+    
     this.initCarousel();
   }
   initCarousel() {
