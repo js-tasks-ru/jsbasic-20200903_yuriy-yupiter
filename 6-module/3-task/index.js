@@ -12,7 +12,7 @@ export default class Carousel {
     this.imageArrowRight = document.createElement('img');
     this.imageArrowRight.setAttribute('src', '/assets/images/icons/angle-icon.svg');
     this.imageArrowRight.setAttribute('alt', 'icon');
-    console.log(this.imageArrowRight);
+
     this.arrowRight.append(this.imageArrowRight);
     this.arrowLeft = document.createElement('div');
     this.arrowLeft.classList.add('carousel__arrow', 'carousel__arrow_left');
@@ -20,7 +20,7 @@ export default class Carousel {
     this.imageArrowLeft = document.createElement('img');
     this.imageArrowLeft.setAttribute('src', '/assets/images/icons/angle-left-icon.svg');
     this.imageArrowLeft.setAttribute('alt', 'icon');
-    console.log(this.imageArrowLeft);
+
     this.arrowLeft.append(this.imageArrowLeft);
 
     this.inner = document.createElement('div');
@@ -61,13 +61,13 @@ export default class Carousel {
       this.icon.setAttribute('alt', 'icon');
       this.button.append(this.icon);
       this.currentSlideNumber = 0;
-      
+
     })
-    
+
     this.initCarousel();
   }
   initCarousel() {
-    
+
     let slidesAmount = this.slides.length;
 
     this.elem.onclick = ({target}) => {
